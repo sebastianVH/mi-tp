@@ -3,109 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberLearning</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>BarberShop</title>
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css"
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Copia el header utilizado en index.html-->
 
-    <header class="header">
 
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Cyber<span class="logo__bold">Learning</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-        </div>
+    <!-- crear el main, con la clase contenedor-->
+        <h3 >Nuestros Próximos Cursos y Talleres</h3> <!-- coloca este h3 dentro del main y agregale la clase "centrar-texto" -->
 
-        <div class="header__texto">
-            <h2 class="no-margin">Comenza a escribir tu futuro!!!</h2>
-            <p class="no-margin">Aprende de los expertos tu carrera de desarrollador</p>
-        </div>
-    </header>
+        <!-- crea un article con la clase "curso". Dentro, deberas crear 2 div: el primero contiene la clase "curso__imagen" y dentro la etiqueta img con la img3.jpg
+        el segundo div contiene la clase "curso__informacion" . dentro tiene un h4, con el texto "Corte de cabello" 
+        y 3 etiquetas p: las 2 primeras tienen la clase "widget-curso__label" , y su contenido son "Precio: Primer mes gratis!!!" y 
+        "cupo:20" , respectivamente. El tercero tiene la clase "curso__descripcion" y dentro el texto de "lorem"
+        -->
 
-    <main class="contenedor">
-        <h3 class="centrar-texto">Nuestros Próximos Cursos y Talleres</h3>
+        <!-- crea otro article con la clase "curso". Dentro, deberas crear 2 div: el primero contiene la clase "curso__imagen" y dentro la etiqueta img con la img4.jpg
+        el segundo div contiene la clase "curso__informacion" . dentro tiene un h4, con el texto "Afeitado y perfilado" 
+        y 3 etiquetas p: las 2 primeras tienen la clase "widget-curso__label" , y su contenido son "Precio: Primer mes gratis!!!" y 
+        "cupo:20" , respectivamente. El tercero tiene la clase "curso__descripcion" y dentro el texto de "lorem"
+        -->
 
-        <div class="curso">
-            <div class="curso__imagen">
-                <img src="img/curso1.jpg" alt="Imagen del curso">
-            </div>
-            <div class="curso__informacion">
-                <h4 class="no-margin">Introduccion a la programacion</h4>
-                <p class="widget-curso__label">Precio: 
-                    <span class="widget-curso__info">Primer mes gratis!!!</span>
-                </p>
-                <p class="widget-curso__label">Cupo: 
-                    <span class="widget-curso__info">20</span>
-                </p>
-                <p class="curso__descripcion">
-                    Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-                </p>
-            </div> <!--.curso-informacion-->
-        </div> <!--.curso -->
+        <!-- crea el utimo article con la clase "curso". Dentro, deberas crear 2 div: el primero contiene la clase "curso__imagen" y dentro la etiqueta img con la img5.jpg
+        el segundo div contiene la clase "curso__informacion" . dentro tiene un h4, con el texto "Curso completo: Corte y afeitado" 
+        y 3 etiquetas p: las 2 primeras tienen la clase "widget-curso__label" , y su contenido son "Precio: Primer mes gratis!!!" y 
+        "cupo:20" , respectivamente. El tercero tiene la clase "curso__descripcion" y dentro el texto de "lorem"
+        -->
 
-        <div class="curso">
-            <div class="curso__imagen">
-                <img src="img/curso2.jpg" alt="Imagen del curso">
-            </div>
-            <div class="curso__informacion">
-                <h4 class="no-margin">Manejo de Excel</h4>
-                <p class="widget-curso__label">Precio: 
-                    <span class="widget-curso__info">Primer mes gratis!!!</span>
-                </p>
-                <p class="widget-curso__label">Cupo: 
-                    <span class="widget-curso__info">20</span>
-                </p>
-                <p class="curso__descripcion">
-                    Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-                </p>
-            </div> <!--.curso-informacion-->
-        </div> <!--.curso -->
+    </main> <!--Aqui deberia cerrar el main-->
 
-        <div class="curso">
-            <div class="curso__imagen">
-                <img src="img/curso3.jpg" alt="Imagen del curso">
-            </div>
-            <div class="curso__informacion">
-                <h4 class="no-margin">Cyber Seguridad</h4>
-                <p class="curso__label">Precio: 
-                    <span class="curso__info">Primer mes gratis!!!</span>
-                </p>
-                <p class="curso__label">Cupo: 
-                    <span class="curso__info">20</span>
-                </p>
-                <p class="curso__descripcion">
-                    Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-                </p>
-            </div> <!--.curso-informacion-->
-        </div> <!--.curso -->
-
-        
-    </main>
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Cyber<span class="logo__bold">Learning</span></h1>
-                </a>
-
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-        </div>
-    </footer>
+    <!--Copia el footer utilizado en index.html-->
     
     <script src="js/modernizr.js"></script>
 </body>
